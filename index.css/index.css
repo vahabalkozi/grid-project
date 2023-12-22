@@ -243,12 +243,14 @@ img {
   width: 330px;
   height: 40px;
   padding: 2px 5px;
-  border: 1px solid #ffb700; }
+  border: 1px solid #ffb700;
+  position: relative; }
   .new-sletter-input input:focus {
     outline: #ffb700; }
 
 .new-sletter-input div {
   display: inline-block;
+  position: absolute;
   width: 40px;
   height: 40px;
   background-color: #ffb700;
