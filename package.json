@@ -1,0 +1,15 @@
+{
+  "name": "vahabalkozi-practice18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "sass":"node-sass -w scss/ -o index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
