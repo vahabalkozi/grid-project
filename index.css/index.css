@@ -342,8 +342,7 @@ img {
     display: block;
     text-align: end; }
   .nav input:checked ~ ul {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); }
+    display: block; }
   .logo {
     margin-bottom: 10px; }
   .hero {
