@@ -54,6 +54,8 @@ img {
       transition: 0.2s; }
       .nav ul li a:hover {
         color: rgba(0, 0, 0, 0.5); }
+  .nav input {
+    display: none; }
   .nav .menu-bars {
     display: none; }
 
@@ -240,7 +242,7 @@ img {
 
 .new-sletter-input input {
   margin: 20px 0px;
-  width: 330px;
+  width: 80%;
   height: 40px;
   padding: 2px 5px;
   border: 1px solid #ffb700;
@@ -260,11 +262,12 @@ img {
 
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("../images/footer.jpg");
-  padding: 20px 0px; }
+  padding: 20px 0px;
+  max-width: 100%; }
   .footer .footer-news-bit {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 10%;
     position: relative; }
     .footer .footer-news-bit::after {
       content: "";
@@ -335,11 +338,12 @@ img {
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   .nav > ul {
     display: none; }
-  .nav > .menu-bars {
+  .nav .menu-bars {
     display: block;
-    text-align: end;
-    font-size: 20px;
-    cursor: pointer; }
+    text-align: end; }
+  .nav input:checked ~ ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); }
   .logo {
     margin-bottom: 10px; }
   .hero {

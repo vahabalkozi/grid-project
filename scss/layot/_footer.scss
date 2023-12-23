@@ -4,11 +4,11 @@
 .footer{
     background:linear-gradient(hsla(0, 0%, 0%, 0.950),rgba(0, 0, 0, 0.950)),url("../images/footer.jpg");
     padding: 20px 0px;
-
+    max-width: 100%;
     .footer-news-bit{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-gap: 30px;
+        grid-gap: 10%;
         position: relative;
 
         &::after{

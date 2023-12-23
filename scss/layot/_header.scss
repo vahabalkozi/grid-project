@@ -31,13 +31,17 @@
         
     }
 
+    input{
+        display: none;
+    }
+
     .menu-bars{
-        display:none;
+        display: none;
     }
 
 }
 //hero
-.hero {
+.hero{
     width: 100%;
     position: relative;
     margin-bottom: 20px;
@@ -124,4 +128,4 @@
         padding-bottom: 5px;
         color: white;
        }
-   }   
+}

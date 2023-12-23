@@ -12,14 +12,17 @@
             display: none;
         }
 
-        &>.menu-bars{
+        .menu-bars{
             display: block;
             text-align: end;
-            font-size: 20px;
-            cursor: pointer;
         }
-    }
-   
+
+        input:checked ~ ul{
+            display: grid;
+            grid-template-columns: repeat(6,1fr );
+        }
+     }
+     
     .logo{
         margin-bottom: 10px;
     }
@@ -59,8 +62,9 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-    
-}   
+  
+ }
+   
 
 
 
