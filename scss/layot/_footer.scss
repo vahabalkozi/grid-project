@@ -4,11 +4,9 @@
 .footer{
     background:linear-gradient(hsla(0, 0%, 0%, 0.950),rgba(0, 0, 0, 0.950)),url("../images/footer.jpg");
     padding: 20px 0px;
-    max-width: 100%;
     .footer-news-bit{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-gap: 10%;
         position: relative;
 
         &::after{
@@ -78,9 +76,11 @@
     margin: 20px 0px;
     ul{
         display: flex;
+        flex-wrap: wrap;
 
         li{
             margin-right: 30px;
+            margin-bottom: 10px;
 
             a{
                 color: white;
