@@ -342,7 +342,8 @@ img {
     display: block;
     text-align: end; }
   .nav input:checked ~ ul {
-    display: block; }
+    display: flex;
+    flex-wrap: wrap; }
   .logo {
     margin-bottom: 10px; }
   .hero {

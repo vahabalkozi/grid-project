@@ -18,7 +18,8 @@
         }
 
         input:checked ~ ul{
-            display: block;
+            display: flex;
+            flex-wrap: wrap;
         }
      }
      
