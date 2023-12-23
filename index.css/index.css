@@ -266,7 +266,8 @@ img {
   .footer .footer-news-bit {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    position: relative; }
+    position: relative;
+    grid-gap: 5px; }
     .footer .footer-news-bit::after {
       content: "";
       position: absolute;
@@ -279,12 +280,14 @@ img {
     margin-bottom: 20px;
     color: white; }
     .footer .news-bit h2 {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-size: 20px; }
       .footer .news-bit h2 span {
         color: #ffb700; }
     .footer .news-bit p {
       margin-bottom: 20px;
-      line-height: 25px; }
+      line-height: 25px;
+      font-size: 14px; }
     .footer .news-bit i {
       color: gainsboro; }
 
@@ -295,9 +298,11 @@ img {
   padding-bottom: 20px; }
   .most-popular-left-top h3, .most-popular-right-top h3 {
     color: #ffb700;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 16px; }
   .most-popular-left-top p, .most-popular-right-top p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 14px; }
   .most-popular-left-top::after, .most-popular-right-top::after {
     content: "";
     position: absolute;
@@ -310,15 +315,15 @@ img {
 .most-popular-left-bottom, .most-popular-right-bottom {
   color: white; }
   .most-popular-left-bottom p, .most-popular-right-bottom p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 14px; }
 
 .footer-nav {
   margin: 20px 0px; }
   .footer-nav ul {
-    display: flex;
-    flex-wrap: wrap; }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
     .footer-nav ul li {
-      margin-right: 30px;
       margin-bottom: 10px; }
       .footer-nav ul li a {
         color: white; }
@@ -340,10 +345,10 @@ img {
     display: none; }
   .nav .menu-bars {
     display: block;
-    text-align: end; }
+    text-align: end;
+    cursor: pointer; }
   .nav input:checked ~ ul {
-    display: flex;
-    flex-wrap: wrap; }
+    display: block; }
   .logo {
     margin-bottom: 10px; }
   .hero {
@@ -372,4 +377,6 @@ img {
       grid-row: 6/7; }
   .recent-news-parent {
     display: grid;
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .footer-nav ul {
+    grid-template-columns: repeat(2, 1fr); } }

@@ -15,11 +15,11 @@
         .menu-bars{
             display: block;
             text-align: end;
+            cursor: pointer;
         }
 
         input:checked ~ ul{
-            display: flex;
-            flex-wrap: wrap;
+            display: block;
         }
      }
      
@@ -61,6 +61,12 @@
     .recent-news-parent{
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .footer-nav{
+        ul{
+            grid-template-columns: repeat(2,1fr);
+        }
     }
   
  }

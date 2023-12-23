@@ -8,6 +8,7 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         position: relative;
+        grid-gap: 5px;
 
         &::after{
             content: "";
@@ -25,6 +26,7 @@
 
                 h2{
                     margin-bottom: 20px;
+                    font-size: 20px;
 
                     span{
                         color: $main-color;
@@ -33,6 +35,7 @@
                 p{
                     margin-bottom: 20px;
                     line-height: 25px;
+                    font-size: 14px;
                 }
                 i{
                     color: gainsboro;
@@ -49,9 +52,11 @@
     h3{
         color: $main-color;
         margin-bottom: 20px;
+        font-size: 16px;
     }
     p{
         margin-bottom: 20px;
+        font-size: 14px;
     }
 
     &::after{
@@ -69,17 +74,17 @@
     color: white;
     p{
         margin-bottom: 20px;
+        font-size: 14px;
     }
 }
 
 .footer-nav{
     margin: 20px 0px;
     ul{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
 
         li{
-            margin-right: 30px;
             margin-bottom: 10px;
 
             a{
